@@ -13,7 +13,7 @@
   const toastStore = getToastStore();
 
   // Initialize Chromecast plugin for video.js.
-  Chromecast(videojs);
+  // Chromecast(videojs);
 
   // Create a WebTorrent client instance.
   const client = new WebTorrent();
@@ -69,7 +69,7 @@
    * VIDEO.JS & CHROMECAST SETUP *
    ****************************/
   export let options: any = {
-    techOrder: ["chromecast", "html5", "flash"], 
+    // techOrder: ["chromecast", "html5", "flash"], 
   };
 
   let videoPlayer: HTMLVideoElement;
@@ -107,7 +107,7 @@
 
     // Initialize video.js on the video element.
     player = videojs(videoPlayer, options, () => {
-      player.chromecast();
+      // player.chromecast();
       console.log('onPlayerReady', player);
       console.log('PLAYER Plugins', player.activePlugins_);
     });
