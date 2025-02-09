@@ -69,7 +69,7 @@
    * VIDEO.JS & CHROMECAST SETUP *
    ****************************/
   export let options: any = {
-    techOrder: ["chromecast", "html5"],
+    techOrder: ["chromecast", "html5", "flash"], 
   };
 
   let videoPlayer: HTMLVideoElement;
